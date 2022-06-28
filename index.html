@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/jquery-modal.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<svg style="display: none">
+			<symbol id="tel" viewBox="0 0 20 20">
+				<path d="M17.5 13.6833V16.63C17.5001 16.841 17.4202 17.0441 17.2763 17.1985C17.1325 17.3528 16.9355 17.4469 16.725 17.4617C16.3608 17.4867 16.0633 17.5 15.8333 17.5C8.46917 17.5 2.5 11.5308 2.5 4.16667C2.5 3.93667 2.5125 3.63917 2.53833 3.275C2.5531 3.06454 2.64715 2.86751 2.8015 2.72367C2.95585 2.57984 3.15902 2.4999 3.37 2.5H6.31667C6.42003 2.4999 6.51975 2.53822 6.59644 2.60752C6.67313 2.67682 6.72133 2.77215 6.73167 2.875C6.75083 3.06667 6.76833 3.21917 6.785 3.335C6.95061 4.49077 7.29 5.61486 7.79167 6.66917C7.87083 6.83583 7.81917 7.035 7.66917 7.14167L5.87083 8.42667C6.97038 10.9887 9.01212 13.0305 11.5742 14.13L12.8575 12.335C12.91 12.2617 12.9865 12.2091 13.0737 12.1864C13.161 12.1637 13.2535 12.1723 13.335 12.2108C14.3892 12.7116 15.513 13.0501 16.6683 13.215C16.7842 13.2317 16.9367 13.25 17.1267 13.2683C17.2294 13.2789 17.3245 13.3271 17.3936 13.4038C17.4628 13.4805 17.501 13.5801 17.5008 13.6833H17.5Z" fill="currentColor"/>
+			</symbol>
+			<symbol id="arrow" viewBox="0 0 25 25">
+				<path d="M13.6722 12.5L8.72217 7.54999L10.1362 6.13599L16.5002 12.5L10.1362 18.864L8.72217 17.45L13.6722 12.5Z" fill="currentColor"/>
+			</symbol>
+
+			<svg><use xlink:href="#shop"></use></svg>
+		</svg>
+
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-top">
+					<div class="container">
+						<div class="header-top__inner">
+							<div class="header__address">Москва и Московская область</div>
+							<div class="header-top__right">
+								<a href="tel:+79374152571" class="header__tel"><svg><use xlink:href="#tel"></use></svg> +7-937-415-25-71</a>
+								<div class="header__time">Пн-Пт с 9:00 до 18:00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<div class="header-bottom__inner">
+							<a href="#" class="header__logo"><img src="images/svg/logo.svg" alt=""><span>Кухни премиум класса<br> в Москве и МО</span></a>
+							<div class="header__main">
+								<div class="header__menu">
+									<ul>
+										<li><a href="#prod">Продукция</a> </li>
+										<li><a href="#projects">Наши работы</a> </li>
+										<li><a href="#about">О компании</a> </li>
+										<li><a href="#step">Как мы работаем</a> </li>
+										<li><a href="#reviews">Отзывы</a> </li>
+										<li><a href="#inf">Обратная связь</a> </li>
+									</ul>
+								</div>
+								<a href="#order" rel="modal:open" class="button button-primary">Заказать замер</a>
+
+								<div class="header__info">
+									<div class="header__info-item">
+										<div class="header__info-title">Телефон:</div>
+										<a href="tel:88002003030" class="header__info-link"><img src="images/svg/tel.svg" alt=""> 8-800-200-30-30</a>
+									</div>
+									<div class="header__info-item">
+										<div class="header__info-title">E-mail:</div>
+										<a href="mailto:Oliskitchen@gmail.com" class="header__info-link"><img src="images/svg/mail.svg" alt=""> Oliskitchen@gmail.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__mob">
+								<a href="tel:+79374152571" class="header__mob-tel"><svg><use xlink:href="#tel"></use></svg></a>
+								<div class="header__toggler js-toggler">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="banner">
+				<div class="container">
+					<div class="banner__inner" style="background-image: url('images/banner-img.jpg')">
+						<div class="banner__text">
+							<div class="banner__label">акция лето 2022</div>
+							<h1>Закажи кухню - <span>получи вытяжку</span></h1>
+							<p>Изготовим вашу кухню по индивидуальным размерам с установкой за 2 недели. Премиальное качество материалов и комплектующих с вытяжкой в подарок.</p>
+							<a href="#order" rel="modal:open" class="button button-black">Участвовать в акции</a>
+						</div>
+						<div class="banner__img"><img src="images/banner-img-mob.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div id="prod" class="ex">
+				<div class="container">
+					<div class="ex__inner">
+						<ul class="tabs">
+							<li class="tab-link current" data-tab="tab-1">Современные кухни</li>
+							<li class="tab-link" data-tab="tab-2">классические кухни</li>
+							<li class="tab-link" data-tab="tab-3">техника для кухни</li>
+							<li class="tab-link" data-tab="tab-4">Комплектующие</li>
+						</ul>
+
+						<div id="tab-1" class="tab-content current">
+							<div class="ex__holder">
+								<div class="ex__text">
+									<div class="ex__title">Кухни в современном стиле от Olist - это лаконичный дизайн, практичность и комфорт.</div>
+									<p>Современный интерьер кухни позволяет воплотить в жизнь практически любую дизайнерскую идею. Открытые пространства, легкость конструкций, контрасты — это направление не просто допускает, оно требует экспериментов с интерьером!</p>
+									<p>	Дизайну кухни в современном стиле присущи гармония линий, элегантная простота форм и высокая эргономичность. Кухня украсит помещение, обеспечит комфорт и вдохновит на творчество. Испанские фасады Alvic, натуральный шпон и другие материалы премиум-класса позволяют создавать уникальный продукт и интерьер полностью под ваши желания. </p>
+									<a href="#order" rel="modal:open" class="button button-black">Заказать замер</a>
+								</div>
+								<div class="ex__slider swiper js-ex-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img1-1.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img1-2.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img1-3.jpg" alt=""></div>
+										</div>
+									</div>
+
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-2" class="tab-content">
+							<div class="ex__holder">
+								<div class="ex__text">
+									<div class="ex__title">Классические кухни - для людей с утонченным вкусом</div>
+									<p>Кухни под заказ в классическом стиле может быть изготовлена любой конфигурации. Размер, стиль и комплектация - воплотим любую мечту и задумку, различные конфигурации под персональные требования.</p>
+										<p>Классический интерьер кухни проверен временем и на протяжении долгих лет не теряет актуальности. Классическая кухня - это шедевр, выполненный из премиальных, высококачественных и дорогих материалов (шпоны дорогих пород древесины, фурнитура из Европы, современные инновационные декоративные покрытия).
+									</p>
+									<a href="#order" rel="modal:open" class="button button-black">Заказать замер</a>
+								</div>
+								<div class="ex__slider swiper js-ex-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img2-1.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img2-2.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img2-3.jpg" alt=""></div>
+										</div>
+									</div>
+
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-3" class="tab-content">
+							<div class="ex__holder">
+								<div class="ex__text">
+									<div class="ex__title">Техника для кухни</div>
+									<p>Элитные кухни характеризуются не только преобладанием натуральных материалов и дорогих комплектующих, но и наличием техники премиум класса. Встраиваемая техника способна поддержать всю стилистику подчеркнуть ансамбль и ваш неповторимый вкус.</p>
+										<p>Элитная бытовая техника для кухни БРЕНД способна подарить функциональное и эстетическое удовольствие. Эргономика и стиль современной встраиваемой техники и настольных устройств не только облегчит быт, но подчеркнет ваш статус.</p>
+									<a href="#order" rel="modal:open" class="button button-black">Заказать замер</a>
+								</div>
+								<div class="ex__slider swiper js-ex-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img3-1.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img3-2.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img3-3.jpg" alt=""></div>
+										</div>
+									</div>
+
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-4" class="tab-content">
+							<div class="ex__holder">
+								<div class="ex__text">
+									<div class="ex__title">Комплектующие</div>
+									<p>Olist в производстве кухонь премиум-класса используют инновационные, современные и высокотехнологичные комплектующие от УКАЗАТЬ БРЕНДЫ. Мойки, смесители, системы хранения и подсветка идеально подойдут к новой кухне, столешнице и интерьеру в целом.</p>
+										<p>Для производства современной многофункциональной кухни Olist выбирает комплектующие только от лидеров отрасли.</p>
+									<a href="#order" rel="modal:open" class="button button-black">Заказать замер</a>
+								</div>
+								<div class="ex__slider swiper js-ex-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img4-1.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img4-2.jpg" alt=""></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ex__slider-item"><img src="images/ex-img4-3.jpg" alt=""></div>
+										</div>
+									</div>
+
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="projects" class="projects">
+				<div class="container">
+					<div class="projects__inner">
+						<h2>Выполненные проекты</h2>
+						<div class="projects__slider swiper js-project-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="projects__slider-item">
+										<a href="images/project-img1.jpg" data-fancybox="proj" class="projects__slider-img"><img src="images/project-img1.jpg" alt=""></a>
+										<div class="projects__slider-title">Кухня Francheska с гостиной</div>
+										<div class="projects__slider-li">
+											<div class="projects__slider-list js-projects-slider-tg">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Массив дерева</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-button-next swiper-button-n-tg"></div>
+											<div class="swiper-button-prev swiper-button-n-tg"></div>
+										</div>
+										<div class="projects__slider-bottom">
+											<div class="projects__slider-price">85 300 ₽/ п.м.</div>
+											<a href="#order" rel="modal:open" class="projects__slider-link">Заказать расчет</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="projects__slider-item">
+										<a href="images/project-img2.jpg" data-fancybox="proj" class="projects__slider-img"><img src="images/project-img2.jpg" alt=""></a>
+										<div class="projects__slider-title">Кухня Francheska с гостиной</div>
+										<div class="projects__slider-li">
+											<div class="projects__slider-list js-projects-slider-tg2">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Массив дерева</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-button-next swiper-button-n-tg2"></div>
+											<div class="swiper-button-prev swiper-button-n-tg2"></div>
+										</div>
+										<div class="projects__slider-bottom">
+											<div class="projects__slider-price">85 300 ₽/ п.м.</div>
+											<a href="#order" rel="modal:open" class="projects__slider-link">Заказать расчет</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="projects__slider-item">
+										<a href="images/project-img3.jpg" data-fancybox="proj" class="projects__slider-img"><img src="images/project-img3.jpg" alt=""></a>
+										<div class="projects__slider-title">Кухня Francheska с гостиной</div>
+										<div class="projects__slider-li">
+											<div class="projects__slider-list js-projects-slider-tg3">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Массив дерева</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-button-next swiper-button-n-tg3"></div>
+											<div class="swiper-button-prev swiper-button-n-tg3"></div>
+										</div>
+										<div class="projects__slider-bottom">
+											<div class="projects__slider-price">85 300 ₽/ п.м.</div>
+											<a href="#order" rel="modal:open" class="projects__slider-link">Заказать расчет</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="projects__slider-item">
+										<a href="images/project-img2.jpg" data-fancybox="proj" class="projects__slider-img"><img src="images/project-img2.jpg" alt=""></a>
+										<div class="projects__slider-title">Кухня Francheska с гостиной</div>
+										<div class="projects__slider-li">
+											<div class="projects__slider-list js-projects-slider-tg4">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Массив дерева</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="projects__slider-list-item">Покрытие «Название»</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-button-next swiper-button-n-tg4"></div>
+											<div class="swiper-button-prev swiper-button-n-tg4"></div>
+										</div>
+										<div class="projects__slider-bottom">
+											<div class="projects__slider-price">85 300 ₽/ п.м.</div>
+											<a href="#order" rel="modal:open" class="projects__slider-link">Заказать расчет</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+							<div class="swiper-button-next swiper-button-n-al"></div>
+							<div class="swiper-button-prev swiper-button-p-al"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="about" class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__text">
+							<div class="tit">о компании</div>
+							<h2>У нас работают настоящие профессионалы</h2>
+							<p>Благодаря автоматизированному производству и опытной команде из дизайнеров замерщиков и сборщиков, мы всегда добиваемся превосходного результата.</p>
+
+							<div class="about__list">
+								<div class="about__list-item">
+									<div class="about__list-numb">44%</div>
+									<div class="about__list-tx">Наших покупателей заказывают у нас кухни повторно</div>
+								</div>
+								<div class="about__list-item">
+									<div class="about__list-numb">89%</div>
+									<div class="about__list-tx">Наших клиентов рекомендуют нас своим знакомым и друзьям</div>
+								</div>
+							</div>
+						</div>
+						<div class="about__img">
+							<img src="images/about-img.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="av">
+				<div class="container">
+					<div class="av__inner">
+						<div class="av__row">
+							<div class="av__cell">
+								<div class="av__cell-inner">
+									<img src="images/svg/icon1.svg" alt="">
+									<div class="av__cell-title">Гарантия </div>
+									<div class="av__cell-tx">На все готовые изделия и материалы 2 года</div>
+								</div>
+							</div>
+							<div class="av__cell">
+								<div class="av__cell-inner">
+									<img src="images/svg/icon2.svg" alt="">
+									<div class="av__cell-title">Качество  </div>
+									<div class="av__cell-tx">Мы используем только качественные материалы</div>
+								</div>
+							</div>
+							<div class="av__cell">
+								<div class="av__cell-inner">
+									<img src="images/svg/icon3.svg" alt="">
+									<div class="av__cell-title">Индивидуальный подход  </div>
+									<div class="av__cell-tx">Мы всегда ориентированы на своих клиентов</div>
+								</div>
+							</div>
+							<div class="av__cell">
+								<div class="av__cell-inner">
+									<img src="images/svg/icon4.svg" alt="">
+									<div class="av__cell-title">Сервис </div>
+									<div class="av__cell-tx">Готовы помочь даже после окончания срока гарантии</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="step" class="step">
+				<div class="container">
+					<div class="step__inner">
+						<div class="step__top">
+							<h2>Вас отделяет всего <span>несколько шагов</span> до кухни вашей мечты</h2>
+							<a href="#order" rel="modal:open" class="button button-black">Заказать замер</a>
+						</div>
+
+						<div class="step__row">
+							<div class="step__cell">
+								<div class="step__cell-inner">
+									<div class="step__cell-numb">1</div>
+									<div class="step__cell-title">Замер и создание проекта</div>
+									<div class="step__cell-tx">Бесплатно замеряем помещение и разрабатываем индивидуальный проект </div>
+								</div>
+							</div>
+							<div class="step__cell">
+								<div class="step__cell-inner">
+									<div class="step__cell-numb">2</div>
+									<div class="step__cell-title">Изготовление</div>
+									<div class="step__cell-tx">Изготавливаем изделие в короткие сроки благодаря наличию своего производства </div>
+								</div>
+							</div>
+							<div class="step__cell">
+								<div class="step__cell-inner">
+									<div class="step__cell-numb">3</div>
+									<div class="step__cell-title">Доставка</div>
+									<div class="step__cell-tx">Доставляем кухню в удобное и заранее согласованное время  </div>
+								</div>
+							</div>
+							<div class="step__cell">
+								<div class="step__cell-inner">
+									<div class="step__cell-numb">4</div>
+									<div class="step__cell-title">Сборка и приемка </div>
+									<div class="step__cell-tx">Собираем изделие за один день. Вам остается только подписать документы</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="reviews" class="reviews">
+				<div class="container">
+					<div class="reviews__inner">
+						<div class="tit">отзывы о нас</div>
+						<h2>Что говорят наши клиенты</h2>
+						<div class="reviews__slider swiper js-reviews-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="reviews__slider-item" style="background-image: url('images/rev-bg1.jpg')">
+										<div class="reviews__slider-tx">
+											<div class="reviews__slider-ava"><img src="images/ava1.jpg" alt=""></div>
+											<div class="reviews__slider-name">Мария Петрова</div>
+											<div class="reviews__slider-pos">Бизнесмен</div>
+											<div class="reviews__slider-text">Заказываем второй раз. Ассортимент за 5 лет значительно расширился, а качество осталось по-прежнему на высоте. </div>
+											<div class="reviews__slider-rating">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__slider-item" style="background-image: url('images/rev-bg2.jpg')">
+										<div class="reviews__slider-tx">
+											<div class="reviews__slider-ava"><img src="images/ava1.jpg" alt=""></div>
+											<div class="reviews__slider-name">Елена Никифорова</div>
+											<div class="reviews__slider-pos">Домохозяйка</div>
+											<div class="reviews__slider-text">Рекомендую данную компанию – результатом довольна на все 100%. Кухня получилась яркая и современная. </div>
+											<div class="reviews__slider-rating">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__slider-item" style="background-image: url('images/rev-bg3.jpg')">
+										<div class="reviews__slider-tx">
+											<div class="reviews__slider-ava"><img src="images/ava3.jpg" alt=""></div>
+											<div class="reviews__slider-name">Евгений Михайлов</div>
+											<div class="reviews__slider-pos">Бизнесмен</div>
+											<div class="reviews__slider-text">Заказываем второй раз. Ассортимент за 5 лет значительно расширился, а качество осталось по-прежнему на высоте. </div>
+											<div class="reviews__slider-rating">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-n.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__slider-item" style="background-image: url('images/rev-bg2.jpg')">
+										<div class="reviews__slider-tx">
+											<div class="reviews__slider-ava"><img src="images/ava1.jpg" alt=""></div>
+											<div class="reviews__slider-name">Елена Никифорова</div>
+											<div class="reviews__slider-pos">Домохозяйка</div>
+											<div class="reviews__slider-text">Рекомендую данную компанию – результатом довольна на все 100%. Кухня получилась яркая и современная. </div>
+											<div class="reviews__slider-rating">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews__slider-item" style="background-image: url('images/rev-bg3.jpg')">
+										<div class="reviews__slider-tx">
+											<div class="reviews__slider-ava"><img src="images/ava3.jpg" alt=""></div>
+											<div class="reviews__slider-name">Евгений Михайлов</div>
+											<div class="reviews__slider-pos">Бизнесмен</div>
+											<div class="reviews__slider-text">Заказываем второй раз. Ассортимент за 5 лет значительно расширился, а качество осталось по-прежнему на высоте. </div>
+											<div class="reviews__slider-rating">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-a.svg" alt="">
+												<img src="images/svg/star-n.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="soc">
+				<div class="container">
+					<div class="soc__inner">
+						<div class="soc__img">
+							<img src="images/soc-img.jpg" alt="">
+						</div>
+						<div class="soc__text">
+							<div class="tit">мы в соцсетях</div>
+							<h2>Подписывайтесь на
+								наш <span class="gr">инстаграм</span> </h2>
+							<p>Обзоры новинок, комплектующих, материалов, полезные советы от дизайнеров, архитекторов и сборщиков,- это и многое другое мы ежедневно освещает в своем профиле. Подписывайтесь, ставьте лайки и пишите коментарии</p>
+							<div class="soc__list">
+								<div class="soc__list-item"><img src="images/svg/icon5.svg" alt=""> Еженедельная подбрка свежих работ</div>
+								<div class="soc__list-item"><img src="images/svg/icon6.svg" alt=""> Актуальная информация о скидках и акциях</div>
+							</div>
+
+							<a href="#" class="button button-black"><img src="images/svg/icon7.svg" alt="">  Подписаться на профиль</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="inf" class="fr" style="background-image: url('images/bg.jpg')">
+				<div class="container">
+					<div class="fr__inner">
+						<form>
+							<div class="form">
+								<div class="form__title">Оставьте <span>заявку на замер</span>, и мы свяжемся с вами</div>
+								<p>Наш менеджер перезвонит вам и уточнит детали в ближайшее время</p>
+
+								<div class="form__row">
+									<div class="form__cell">
+										<input type="text" id="name" placeholder="Ваше имя">
+
+										<span class="validation validateName">
+														<span class="nameValidationImg"></span>
+										</span>
+									</div>
+									<div class="form__cell">
+										<input type="text" id="phone" placeholder="+7 ( ___ ) - ___ - __ - __" name="phone-number">
+
+										<span class="validation validatePhone">
+														<span class="phoneValidationImg"></span>
+    											</span>
+									</div>
+									<div class="form__cell">
+										<div class="form__file">
+											<div class="fl">
+												<label for="attachment"><a class="bt" role="button" aria-disabled="false"> Прикрепить файл </a></label><input type="file" name="file[]" id="attachment" class="attachment" style="visibility: hidden; position: absolute;" multiple/>
+											</div>
+											<div class="files-area">
+												<div class="filesList">
+													<div class="files-names"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form__cell">
+										<button type="button" class="button button-black submitBtn">Оставить заявку</button>
+									</div>
+									<div class="form__cell">
+										<input type="checkbox" id="check" checked>
+										<label for="check">Даю согласие на обработку <a href="#">Персональных данных</a> </label>
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<div class="fr__img"><img src="images/bg-mob.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<footer  class="footer">
+				<div class="container">
+					<div class="footer-top">
+						<div class="footer__title">Вы можете связаться с нами любым удобным для вас способом</div>
+
+						<div class="footer__info">
+							<div class="footer__info-row">
+								<div class="footer__info-cell">
+									<div class="footer__info-title">Телефон:</div>
+									<a href="tel:+79374152571" class="footer__info-link"><img src="images/svg/tel.svg" alt=""> +7-937-415-25-71</a>
+								</div>
+								<div class="footer__info-cell">
+									<div class="footer__info-title">E-mail:</div>
+									<a href="mailto:Oliskitchen@gmail.com" class="footer__info-link"><img src="images/svg/mail.svg" alt=""> Oliskitchen@gmail.com</a>
+								</div>
+							</div>
+
+							<div class="footer__info-row">
+								<div class="footer__info-cell">
+									<div class="footer__info-title">Адрес:</div>
+									<div class="footer__info-tt"><img src="images/svg/map.svg" alt=""> г. Москва, ул. Гагарина 174 а</div>
+								</div>
+								<div class="footer__info-cell">
+									<div class="footer__info-title">Режим работы:</div>
+									<a class="footer__info-tt"><img src="images/svg/time.svg" alt=""> Пн-Пт с 9:00 до 18:00</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<a href="#" class="footer__logo"><img src="images/svg/logo2.svg" alt=""> <span>Кухни премиум класса в Москве и МО</span></a>
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#prod">Продукция</a> </li>
+								<li><a href="#projects">Наши работы</a> </li>
+								<li><a href="#about">О компании</a> </li>
+								<li><a href="#step">Как мы работаем</a> </li>
+								<li><a href="#reviews">Отзывы</a> </li>
+								<li><a href="#inf">Обратная связь</a> </li>
+							</ul>
+						</div>
+						<div class="footer__bottom">
+							<a href="#" class="footer__dev"><img src="images/svg/lg.svg" alt=""> Разработано MEVEN</a>
+							<div class="footer__copy">Все права защищены ©</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="order" class="modal">
+			<div class="modal__inner">
+				<form>
+					<div class="form">
+						<div class="form__title">Заказать расчет кухни</div>
+						<p>Наш менеджер перезвонит вам в ближайшее время и уточнит детали</p>
+
+						<div class="form__row">
+							<div class="form__cell">
+								<input type="text" id="name2" placeholder="Ваше имя">
+
+								<span class="validation validateName2">
+														<span class="nameValidationImg2"></span>
+										</span>
+							</div>
+							<div class="form__cell">
+								<input type="text" id="phone2" placeholder="+7 ( ___ ) - ___ - __ - __" name="phone-number">
+
+								<span class="validation validatePhone2">
+														<span class="phoneValidationImg2"></span>
+    											</span>
+							</div>
+							<div class="form__cell">
+								<div class="form__file">
+									<div class="fl">
+										<label for="attachment2"><a class="bt" role="button" aria-disabled="false"> <span>Прикрепить файл</span></a></label><input type="file" name="file[]" id="attachment2" class="attachment2"  style="visibility: hidden; position: absolute;" multiple/>
+									</div>
+									<div class="files-area2">
+										<div class="filesList2">
+											<div class="files-names2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__cell">
+								<button type="button" class="button button-black submitBtn2">Оставить заявку</button>
+							</div>
+							<div class="form__cell">
+								<input type="checkbox" id="check2" checked>
+								<label for="check">Даю согласие на обработку <a href="#">Персональных данных</a> </label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="send" class="modal">
+			<div class="modal__inner">
+				<div class="form">
+					<div class="form__img">
+						<img src="images/svg/ex.svg" alt="">
+					</div>
+					<div class="form__title">Ваша заявка успешно отправлена!</div>
+					<p>Ожидайте звонка, мы свяжемся с вами в ближайшее время!</p>
+
+					<div class="form__row">
+						<div class="form__cell">
+							<a href="#" rel="modal:close" class="button button-black">Вернуться на сайт</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/script-jquery.js"></script>
+		<script src="js/masktel.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/jquery-modal.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
