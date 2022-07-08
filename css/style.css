@@ -359,9 +359,6 @@ h2 span.gr { background: -webkit-linear-gradient(315deg, #FBE18A 0.96%, #FCBB45 
 .modal { max-width: 560px; border-radius: 0; box-shadow: none; }
 .modal .close-modal { top: -40px !important; right: -40px !important; background-image: url("../images/svg/close2.svg") !important; background-repeat: no-repeat; background-position: center; background-size: contain !important; }
 @media screen and (max-width: 991px) { .modal .close-modal { right: -20px !important; } }
-.modal .form { padding: 20px 10px; }
-@media screen and (max-width: 991px) { .modal .form { padding: 0; } }
-.modal .form__title { margin-bottom: 20px; }
 
 .footer { background-color: #282C3F; }
 .footer-top { padding: 52px 0; display: flex; align-items: flex-start; justify-content: space-between; }
@@ -407,3 +404,12 @@ h2 span.gr { background: -webkit-linear-gradient(315deg, #FBE18A 0.96%, #FCBB45 
 .footer__dev:hover { color: #D88D4C; }
 .footer__copy { font-size: 14px; line-height: 18px; color: #848995; }
 @media screen and (max-width: 991px) { .footer__copy { margin-top: 15px; } }
+
+.remodal { padding: 0; max-width: 560px; text-align: left; }
+.remodal-overlay { background: rgba(40, 44, 63, 0.8); }
+.remodal .form { padding: 40px; }
+@media screen and (max-width: 991px) { .remodal .form { padding: 20px; } }
+.remodal .form__title { margin-bottom: 20px; }
+
+.remodal-close { top: -40px !important; right: -40px !important; left: inherit !important; background-image: url("../images/svg/close2.svg") !important; background-repeat: no-repeat; background-position: center; background-size: contain !important; color: transparent !important; }
+@media screen and (max-width: 991px) { .remodal-close { right: -20px !important; } }
